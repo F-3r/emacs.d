@@ -18,7 +18,8 @@
    flymake-cursor
    windmove
    markdown-mode
-   zenburn-theme))
+   zenburn-theme
+   inf-ruby))
 
 (dolist (package i-want-these-packages)
   (when (not (package-installed-p package))
