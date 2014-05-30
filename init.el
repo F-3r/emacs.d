@@ -19,7 +19,14 @@
    windmove
    markdown-mode
    zenburn-theme
-   inf-ruby))
+   inf-ruby
+   slim-mode
+   rainbow-delimiters
+   clojure-mode
+   js2-mode
+   ac-js2
+  )
+)
 
 (dolist (package i-want-these-packages)
   (when (not (package-installed-p package))
@@ -64,5 +71,21 @@
 ;; ruby-mode init
 (load "ruby-init")
 
+;; clojure-mode init
+(load "clojure-init")
+
 ;; load custom key bindings
 (load "key-bindings")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(slim-backspace-backdents-nesting nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(flymake-errline ((((class color)) (:underline "red"))))
+ '(flymake-warnline ((((class color)) (:underline "yellow")))))
