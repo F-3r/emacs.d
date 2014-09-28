@@ -1,5 +1,6 @@
-*~
-elpa/*
-backups/*
-autosaves/*
+*.elc
+elpa
+backups
+autosaves
 auto-save-list
+places
