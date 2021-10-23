@@ -4,9 +4,6 @@
 (global-set-key (kbd "C-c c") 'uncomment-region)
 (global-set-key (kbd "C-c C-c") 'comment-region)
 
-;; hippie-expand
-(global-set-key (kbd "<C-return>") 'hippie-expand)
-
 ;; window resizing Ctrl-Super-<arrow>
 (global-set-key (kbd "C-s-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "C-s-<right>") 'enlarge-window-horizontally)
